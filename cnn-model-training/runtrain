@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+TK=top
+TV=True
+TRAIN_F=tcga-breast-tiles-224px-combined-labels-train.tsv.gz
+VAL_F=tcga-breast-tiles-224px-combined-labels-valid.tsv.gz
+python MIL_train.py --train_lib $TRAIN_F --val_lib $VAL_F --target-k $TK --target-v $TV --batch_size 256 --workers 6 --k 10 --weights 0.95 --test_every 1 --nepochs 100
+
+

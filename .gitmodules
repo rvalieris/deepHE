@@ -1,0 +1,12 @@
+[submodule "wsi-preprocessing"]
+	path = wsi-preprocessing
+	url = https://github.com/lucasrla/wsi-preprocessing
+[submodule "ec2-setup-sos-workflow"]
+	path = ec2-setup-sos-workflow
+	url = https://github.com/lucasrla/ec2-setup-sos-workflow
+[submodule "wsi-preprocessing-sos-workflow"]
+	path = wsi-preprocessing-sos-workflow
+	url = https://github.com/lucasrla/wsi-preprocessing-sos-workflow
+[submodule "wsi-tile-cleanup"]
+	path = wsi-tile-cleanup
+	url = https://github.com/lucasrla/wsi-tile-cleanup

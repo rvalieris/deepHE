@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+TK=top
+TV=True
+TRAIN_F=tcga-breast-tiles-224px-combined-labels-train.tsv.gz
+VAL_F=tcga-breast-tiles-224px-combined-labels-valid.tsv.gz
+MODEL=checkpoint_k10_0.31958.pth
+python MIL_inf.py --train_lib $TRAIN_F --val_lib $VAL_F --target-k $TK --target-v $TV --batch_size 256 --workers 2 --k 10 --model $MODEL 
+
+

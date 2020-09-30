@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+TK=top
+TV=True
+TRAIN_F=train_inferences_k10_0.28865.tsv
+VAL_F=val_inferences_k10_0.28865.tsv
+MODEL=checkpoint_k10_0.28865.pth
+python RNN_train.py --train_lib $TRAIN_F --val_lib $VAL_F --batch_size 256 --workers 8 --k 10 --lr 5e-5 --weights 0.9 --nepochs 60 --model $MODEL
+
